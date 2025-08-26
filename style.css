@@ -100,7 +100,7 @@ html { scroll-behavior: smooth; }
 @media (max-width: 600px) {
   .hero {
     min-height: auto;  
-    padding: 2px 0 20px 0;
+    padding: 0 0 0 0;
   }
 
   .hero .photo img {
