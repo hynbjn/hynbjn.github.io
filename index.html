@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyunbin Jin</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="vertical-name">Hyunbin Jin</div>
+
+<div class="section-buttons">
+  <a href="#education">Education</a>
+  <a href="#publications">Publications</a>
+  <a href="#awards">Awards</a>
+  <a href="#work">Work</a>
+  <a href="#projects">Projects</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="photo">
+      <img src="images/Hyunbin.png" alt="profile photo">
+    </div>
+    <div class="name">Hyunbin Jin</div>
+    <div class="role">M.S. Student — LLM Reasoning, AI Safety, Computational Social Science</div>
+    <p class="desc">
+        My research focuses on the underlying mechanisms of LLMs with the goal of enhancing their reasoning ability, reliability, and safety. I am further interested in applying LLMs to interdisciplinary challenges, particularly those arising at the intersection of artificial intelligence and the social sciences.    
+    </p>
+    <div class="hero-links">
+      <a href="mailto:hyunbin.jin@snu.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="data/CV.pdf" target="_blank" title="CV" class="cv-icon"><img src="images/cv.png" alt="CV"></a>
+      <a href="https://www.linkedin.com/in/hynbjn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/hynbjn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=m3T-WbkAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>M.S., Data Science</strong> — Seoul National University (Sep. 2023 - present)</p>
+    <p><strong>Exchange Student</strong> — New York University (Sep. 2021 - Dec. 2021)</p>
+    <p><strong>B.A., Political Science and International Studies</strong> — Yonsei University (Mar. 2018 - Feb. 2023)</p>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="pub-type">Conference</p>
+    <div class="publication">
+      <p class="pub-title"><strong>"Well, Keep Thinking": Enhancing LLM Reasoning with Adaptive Injection Decoding</strong></p>
+      <p class="pub-authors">Hyunbin Jin*, Je Won Yeom*, Seunghyun Bae*, Taesup Kim</p>
+      <p class="pub-conference">ACL 2025 Findings • <a href="https://arxiv.org/abs/2503.10167" target="_blank">arXiv</a></p>
+    </div>
+    <div class="publication">
+      <p class="pub-title"><strong>ATAS: Any-to-Any Self-Distillation for Enhanced Open-Vocabulary Dense Prediction</strong></p>
+      <p class="pub-authors">Juan Yeo*, Soonwoo Cha*, Jiwoo Song*, Hyunbin Jin, Taesup Kim</p>
+      <p class="pub-conference">ICCV 2025 • <a href="https://arxiv.org/abs/2506.08678" target="_blank">arXiv</a></p>
+    </div>
+
+    <p class="pub-type">Preprint</p>
+    <div class="publication">
+      <p class="pub-title"><strong>From Threat to Tool: Leveraging Refusal-Aware Injection Attacks for Safety Alignment</strong></p>
+      <p class="pub-authors">Kyubyung Chae*, Hyunbin Jin*, Taesup Kim</p>
+      <p class="pub-conference"><a href="https://arxiv.org/abs/2506.10020" target="_blank">arXiv</a></p>
+    </div>
+    <p style="font-size: 14px; color: #aaa; margin-left: 20px;">* : Equal Contribution</p>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Awards & Honors</h2>
+    <p class="pub-title"><strong>Support for Next-Generation Researchers Program</strong></p>
+    <p class="pub-authors">Research Subsidy for Master’s Students, Ministry of Education, South Korea</p>
+    <p class="pub-conference">Jul. 2024 - Jun. 2025</p>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <h2>Work Experience</h2>
+    <div class="publication">
+      <p class="pub-title"><strong>NLP Research Engineer, Twigfarm</strong> — Oct. 2022 - Feb. 2023</p>
+      <p class="pub-authors">- Participated in an image-guided machine translation (IMT) project for Korean–Japanese webtoon translation.</p>
+      <p class="pub-authors">- Constructed a Korean–English parallel dataset for video-guided machine translation (VMT).</p>
+    </div>
+    <div class="publication">
+      <p class="pub-title"><strong>Data Analyst Intern, UpennSolution</strong> — Feb. 2021 - Jul. 2021</p>
+      <p class="pub-authors">- Participated in data analysis projects to extract insights on social phenomena using real-world data and statistical methods.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Research Projects</h2>
+    <div class="publication">
+      <p class="pub-title"><strong>Clinical Data Extraction</strong> — Aug. 2025 -</p>
+      <p class="pub-authors">Academic Research Collaboration with Seoul National University Bundang Hospital</p>
+      <p class="pub-conference">- Developed LLM-based pipeline to automatically extract key clinical findings from unstructured clinical notes for epilepsy patients, optimized for physician-specific documentation patterns.</p>
+    </div>
+    <div class="publication">
+      <p class="pub-title"><strong>Legal RAG</strong> — Mar. 2025 - Aug. 2025</p>
+      <p class="pub-authors">Academic Research Collaboration with Naedam C&amp;C</p>
+      <p class="pub-conference">- Constructed a QA dataset on Korean fire safety law, and developed a domain-specific chatbot using retrieval-augmented generation (RAG).</p>
+    </div>
+    <div class="publication">
+      <p class="pub-title"><strong>Blur Face Detection</strong> — Jul. 2022 - Sep. 2022</p>
+      <p class="pub-authors">Academic Research Collaboration with Alchera</p>
+      <p class="pub-conference">- Developed and evaluated a regression model to estimate blur degree in facial images, aiming to filter motion-blurred inputs for more reliable face recognition.</p>
+    </div>
+  </section>
+</main>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const heroHeight = document.querySelector('.hero').offsetHeight;
+    if (window.scrollY > heroHeight / 4) {
+      document.body.classList.add('scrolled');
+    } else {
+      document.body.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
