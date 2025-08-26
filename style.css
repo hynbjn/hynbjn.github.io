@@ -29,7 +29,7 @@ main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
 .hero .role { font-size: 18px; color: #aaa; margin-bottom: 8px; }
 .hero .desc { font-size: 16px; max-width: 600px; margin: 0 auto; }
 
-.hero .hero-links { margin-top: 20px; display: flex; gap: 16px; font-size: 24px; }
+.hero .hero-links { margin-top: 10px; display: flex; gap: 16px; font-size: 24px; }
 .hero-links a { color: #fff; }
 .hero-links a.cv-icon img { width: 24px; height: 24px; transform: translateY(3px); }
 
