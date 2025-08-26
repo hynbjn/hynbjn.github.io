@@ -99,8 +99,12 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 600px) {
   .hero {
-    min-height: auto;  
-    padding: 0 0 0 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-top: 20px;           
+    padding-bottom: 40px;        
   }
 
   .hero .photo img {
