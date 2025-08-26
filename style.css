@@ -99,11 +99,10 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 600px) {
   .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start; 
-    padding-top: 20px;           
+    padding-top: 50px;           
     padding-bottom: 40px;        
   }
 
