@@ -100,7 +100,7 @@ html { scroll-behavior: smooth; }
 @media (max-width: 600px) {
   .hero {
     min-height: auto;  
-    padding: 10px 0 20px 0;
+    padding: 2px 0 20px 0;
   }
 
   .hero .photo img {
@@ -124,7 +124,6 @@ html { scroll-behavior: smooth; }
     margin-bottom: 10px;
   }
 
-  /* 링크 */
   .hero .hero-links {
     font-size: 18px;
     gap: 10px;
