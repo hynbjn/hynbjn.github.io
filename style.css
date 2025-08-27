@@ -135,6 +135,7 @@ html { scroll-behavior: smooth; }
 
   .vertical-name {
     font-size: 18px;
+    font-weight: 200;
     top: 10px;
   }
 
