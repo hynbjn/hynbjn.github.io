@@ -102,8 +102,8 @@ html { scroll-behavior: smooth; }
     min-height: auto;
     display: flex;
     justify-content: flex-start; 
-    padding-top: 70px;           
-    padding-bottom: 40px;        
+    padding-top: 75px;           
+    padding-bottom: 35px;        
   }
 
   .hero .photo img {
