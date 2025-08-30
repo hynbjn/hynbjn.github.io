@@ -36,7 +36,7 @@ main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
 /* Sections */
 section { padding: 60px 0; border-top: 1px solid #333; }
 section h2 { font-size: 34px; font-weight: 315; margin-bottom: 16px; }
-section p, section ul { font-size: 18px; font-weight: 250; max-width: 700px; margin: 0 auto; margin-left: 30px; }
+section p, section ul { font-size: 18px; font-weight: 250; max-width: 900px; margin: 0 auto; margin-left: 30px; }
 section ul { padding-left: 20px; }
 
 #education { border-top: none; }
