@@ -85,7 +85,7 @@ section ul { padding-left: 20px; }
 
 /* Publications */
 .publication { margin-bottom: 24px; }
-.pub-type { font-size: 22px; font-weight: 450; margin-bottom: 4px; font-style: oblique; font-family: serif; margin-left: 15px; }
+.pub-type { font-size: 22px; font-weight: 450; margin-bottom: 4px; font-style: oblique; margin-left: 15px; }
 .pub-title { font-size: 18px; font-weight: 250; margin-bottom: 4px; }
 .pub-authors { font-size: 17px; color: #aaa; margin-bottom: 4px; }
 .pub-conference { font-size: 16px; font-style: italic; color: #ccc; margin-bottom: 8px; }
