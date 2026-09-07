@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hyunbin Jin</title>
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyunbin Jin</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Publication filter */
+    .publication-tabs {
+      display: flex;
+      gap: 8px;
+      margin: 0 0 24px 20px;
+    }
+
+    .publication-tab {
+      border: none;
+      background: transparent;
+      color: #999;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .publication-tab:hover {
+      color: #555;
+    }
+
+    .publication-tab.active {
+      background: #f0f0f0;
+      color: #222;
+    }
+
+    .publication-view {
+      display: none;
+    }
+
+    .publication-view.active {
+      display: block;
+    }
+
+    .pub-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 8px 0 0 0;
+    }
+
+    .pub-tag {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 12px;
+      background: #f3f3f3;
+      color: #777;
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
 
 <div class="vertical-name">Hyunbin Jin</div>
@@ -23,149 +81,436 @@
 </div>
 
 <main>
+
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="photo">
       <img src="images/Hyunbin.png" alt="profile photo">
     </div>
+
     <div class="name">Hyunbin Jin</div>
     <div class="role">AI Safety, Computational Social Science</div>
+
     <p class="desc">
-      My research interests lie in understanding how large language models behave throughout their reasoning processes, particularly how and why failures emerge. I am especially interested in safety failures, including how unsafe behaviors develop during reasoning and how these insights can inform methods for detecting and preventing them. I am also interested in how model behavior varies across languages, users, and social contexts, as well as the underlying factors that shape these differences.</p>
+      My research interests lie in understanding how large language models behave throughout their reasoning processes, particularly how and why failures emerge. I am especially interested in safety failures, including how unsafe behaviors develop during reasoning and how these insights can inform methods for detecting and preventing them. I am also interested in how model behavior varies across languages, users, and social contexts, as well as the underlying factors that shape these differences.
+    </p>
+
     <div class="hero-links">
-      <a href="mailto:hyunbin.jin@snu.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="data/Hyunbin-Jin-CV-2026.pdf" target="_blank" title="CV" class="cv-icon"><img src="images/cv.png" alt="CV"></a>
-      <a href="https://www.linkedin.com/in/hynbjn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/hynbjn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://scholar.google.com/citations?user=m3T-WbkAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="mailto:hyunbin.jin@snu.ac.kr" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="data/Hyunbin-Jin-CV-2026.pdf" target="_blank" title="CV" class="cv-icon">
+        <img src="images/cv.png" alt="CV">
+      </a>
+
+      <a href="https://www.linkedin.com/in/hynbjn" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/hynbjn" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://scholar.google.com/citations?user=m3T-WbkAAAAJ&hl=en" target="_blank" title="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
     </div>
   </section>
+
 
   <!-- Education -->
   <section id="education">
     <h2>Education</h2>
-    <p><strong>M.S., Data Science</strong> — Seoul National University (Sep. 2023 - Feb. 2026)</p>
-    <p><strong>Exchange Student</strong> — New York University (Sep. 2021 - Dec. 2021)</p>
-    <p><strong>B.A., Political Science and Diplomacy</strong> — Yonsei University (Mar. 2018 - Feb. 2023)</p>
+
+    <p>
+      <strong>M.S., Data Science</strong> — Seoul National University (Sep. 2023 - Feb. 2026)
+    </p>
+
+    <p>
+      <strong>Exchange Student</strong> — New York University (Sep. 2021 - Dec. 2021)
+    </p>
+
+    <p>
+      <strong>B.A., Political Science and Diplomacy</strong> — Yonsei University (Mar. 2018 - Feb. 2023)
+    </p>
   </section>
+
 
   <!-- Publications -->
   <section id="publications">
     <h2>Publications</h2>
-    <p class="pub-type">Conference</p>
-    <div class="publication">
-      <p class="pub-title"><strong>"Well, Keep Thinking": Enhancing LLM Reasoning with Adaptive Injection Decoding</strong></p>
-      <p class="pub-authors"><u>Hyunbin Jin*</u>, Je Won Yeom*, Seunghyun Bae*, Taesup Kim</p>
-      <p class="pub-conference">ACL 2025 Findings • <a href="https://arxiv.org/abs/2503.10167" target="_blank">arXiv</a></p>
+
+    <div class="publication-tabs">
+      <button class="publication-tab active" data-view="selected">Selected</button>
+      <button class="publication-tab" data-view="all">All</button>
     </div>
-    <div class="publication">
-      <p class="pub-title"><strong>ATAS: Any-to-Any Self-Distillation for Enhanced Open-Vocabulary Dense Prediction</strong></p>
-      <p class="pub-authors">Juan Yeo*, Soonwoo Cha*, Jiwoo Song*, <u>Hyunbin Jin</u>, Taesup Kim</p>
-      <p class="pub-conference">ICCV 2025 • <a href="https://arxiv.org/abs/2506.08678" target="_blank">arXiv</a></p>
+
+
+    <!-- Selected Publications -->
+    <div id="selected" class="publication-view active">
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>TrASE: Trajectory-Aware Safety Evaluation for Large Reasoning Models</strong>
+        </p>
+        <p class="pub-authors">
+          <u>Hyunbin Jin*</u>, Jungwhan Kim*
+        </p>
+        <p class="pub-conference">
+          Under Review
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">AI Safety</span>
+          <span class="pub-tag">LLM Reasoning</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>Evaluating Structure-Aware Retrieval and Safety in Statute-Centric Legal QA</strong>
+        </p>
+        <p class="pub-authors">
+          Kyubyung Chae, Je Won Yeom, Jeongjae Park, Seunghyun Bae, Ijun Jang, <u>Hyunbin Jin</u>, Jinkwan Jang, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          ACL 2026 Oral •
+          <a href="https://arxiv.org/pdf/2604.06173" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">Legal AI</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>From Threat to Tool: Leveraging Refusal-Aware Injection Attacks for Safety Alignment</strong>
+        </p>
+        <p class="pub-authors">
+          Kyubyung Chae*, <u>Hyunbin Jin*</u>, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          arXiv preprint •
+          <a href="https://arxiv.org/abs/2506.10020" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">AI Safety</span>
+          <span class="pub-tag">Safety Alignment</span>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>"Well, Keep Thinking": Enhancing LLM Reasoning with Adaptive Injection Decoding</strong>
+        </p>
+        <p class="pub-authors">
+          <u>Hyunbin Jin*</u>, Je Won Yeom*, Seunghyun Bae*, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          ACL 2025 Findings •
+          <a href="https://arxiv.org/abs/2503.10167" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">LLM Reasoning</span>
+        </div>
+      </div>
+
+
     </div>
-    <div class="publication">
-      <p class="pub-title"><strong>Evaluating Structure-Aware Retrieval and Safety in Statute-Centric Legal QA</strong></p>
-      <p class="pub-authors">Kyubyung Chae, Je Won Yeom, Jeongjae Park, Seunghyun Bae, Ijun Jang, <u>Hyunbin Jin</u>, Jinkwan Jang, Taesup Kim</p>
-      <p class="pub-conference">ACL 2026 Oral • <a href="https://arxiv.org/pdf/2604.06173" target="_blank">arXiv</a></p>
+
+
+    <!-- All Publications -->
+    <div id="all" class="publication-view">
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>TrASE: Trajectory-Aware Safety Evaluation for Large Reasoning Models</strong>
+        </p>
+        <p class="pub-authors">
+          <u>Hyunbin Jin*</u>, Jungwhan Kim*
+        </p>
+        <p class="pub-conference">
+          Under Review
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">AI Safety</span>
+          <span class="pub-tag">LLM Reasoning</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>Evaluating Structure-Aware Retrieval and Safety in Statute-Centric Legal QA</strong>
+        </p>
+        <p class="pub-authors">
+          Kyubyung Chae, Je Won Yeom, Jeongjae Park, Seunghyun Bae, Ijun Jang, <u>Hyunbin Jin</u>, Jinkwan Jang, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          ACL 2026 Oral •
+          <a href="https://arxiv.org/pdf/2604.06173" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">Legal AI</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>What If TSF: A Benchmark for Reframing Forecasting as Scenario-Guided Multimodal Forecasting</strong>
+        </p>
+        <p class="pub-authors">
+          Jinkwan Jang*, <u>Hyunbin Jin*</u>, Hyungjin Park, Kyubyung Chae, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          arXiv preprint •
+          <a href="https://arxiv.org/abs/2601.08509" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">Multimodal</span>
+          <span class="pub-tag">Time-Series Forecasting</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>From Threat to Tool: Leveraging Refusal-Aware Injection Attacks for Safety Alignment</strong>
+        </p>
+        <p class="pub-authors">
+          Kyubyung Chae*, <u>Hyunbin Jin*</u>, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          arXiv preprint •
+          <a href="https://arxiv.org/abs/2506.10020" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">AI Safety</span>
+          <span class="pub-tag">Safety Alignment</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>ATAS: Any-to-Any Self-Distillation for Enhanced Open-Vocabulary Dense Prediction</strong>
+        </p>
+        <p class="pub-authors">
+          Juan Yeo*, Soonwoo Cha*, Jiwoo Song*, <u>Hyunbin Jin</u>, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          ICCV 2025 •
+          <a href="https://arxiv.org/abs/2506.08678" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">Multimodal</span>
+          <span class="pub-tag">Self-Distillation</span>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>"Well, Keep Thinking": Enhancing LLM Reasoning with Adaptive Injection Decoding</strong>
+        </p>
+        <p class="pub-authors">
+          <u>Hyunbin Jin*</u>, Je Won Yeom*, Seunghyun Bae*, Taesup Kim
+        </p>
+        <p class="pub-conference">
+          ACL 2025 Findings •
+          <a href="https://arxiv.org/abs/2503.10167" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">LLM Reasoning</span>
+        </div>
+      </div>
+
+
+      <div class="publication">
+        <p class="pub-title">
+          <strong>HyperCLOVA X 8B Omni</strong>
+        </p>
+        <p class="pub-authors">
+          NAVER Cloud HyperCLOVA X Team - Contributor
+        </p>
+        <p class="pub-conference">
+          Technical Report •
+          <a href="https://arxiv.org/abs/2601.01792" target="_blank">arXiv</a>
+        </p>
+        <div class="pub-tags">
+          <span class="pub-tag">Foundation Models</span>
+        </div>
+      </div>
+
+
+      <p style="font-size: 14px; color: #aaa; margin-left: 20px;">
+        * : Equal Contribution
+      </p>
+
     </div>
-    <p class="pub-type">Under Review</p>
-    <div class="publication">
-      <p class="pub-title"><strong>TrASE: Trajectory-Aware Safety Evaluation for Large Reasoning Models</strong></p>
-      <p class="pub-authors"><u>Hyunbin Jin*</u>, Jungwhan Kim*</p>
-    </div>
-    <p class="pub-type">Preprint</p>
-    <div class="publication">
-      <p class="pub-title"><strong>From Threat to Tool: Leveraging Refusal-Aware Injection Attacks for Safety Alignment</strong></p>
-      <p class="pub-authors">Kyubyung Chae*, <u>Hyunbin Jin*</u>, Taesup Kim</p>
-      <p class="pub-conference"><a href="https://arxiv.org/abs/2506.10020" target="_blank">arXiv</a></p>
-      <p class="pub-title"><strong>What If TSF: A Benchmark for Reframing Forecasting as Scenario-Guided Multimodal Forecasting</strong></p>
-      <p class="pub-authors">Jinkwan Jang*, <u>Hyunbin Jin*</u>, Hyungjin Park, Kyubyung Chae, Taesup Kim</p>
-      <p class="pub-conference"><a href="https://arxiv.org/abs/2601.08509" target="_blank">arXiv</a></p>
-    </div>
-    <p class="pub-type">Contribution</p>
-    <div class="publication">
-      <p class="pub-title"><strong>HyperCLOVA X 8B Omni</strong></p>
-      <p class="pub-authors">NAVER Cloud HyperCLOVA X Team - Contributor</p>
-      <p class="pub-conference">Technical Report • <a href="https://arxiv.org/abs/2601.01792" target="_blank">arXiv</a></p>
-    </div>
-    <p style="font-size: 14px; color: #aaa; margin-left: 20px;">* : Equal Contribution</p>
+
+  </section>
 
 
   <!-- Work -->
   <section id="work">
     <h2>Work Experience</h2>
+
     <div class="publication">
-      <p class="pub-title"><strong>Residency Program, NAVER Cloud</strong> — Oct. 2025 - Jul. 2026</p>
-      <p class="pub-authors">- Constructed distillation-based synthetic SFT data to enhance reasoning, and designed a safety evaluation framework assessing LRM reasoning trajectories.</p>
+      <p class="pub-title">
+        <strong>Residency Program, NAVER Cloud</strong> — Oct. 2025 - Jul. 2026
+      </p>
+      <p class="pub-authors">
+        - Constructed distillation-based synthetic SFT data to enhance reasoning, and designed a safety evaluation framework assessing LRM reasoning trajectories.
+      </p>
     </div>
+
     <div class="publication">
-      <p class="pub-title"><strong>NLP Research Engineer, Twigfarm</strong> — Oct. 2022 - Feb. 2023</p>
-      <p class="pub-authors">- Developed an image-guided machine translation (IMT) pipeline for Korean–Japanese webtoon translation.</p>
-      <p class="pub-authors">- Constructed a Korean–English parallel dataset for video-guided machine translation (VMT).</p>
+      <p class="pub-title">
+        <strong>NLP Research Engineer, Twigfarm</strong> — Oct. 2022 - Feb. 2023
+      </p>
+      <p class="pub-authors">
+        - Developed an image-guided machine translation (IMT) pipeline for Korean–Japanese webtoon translation.
+      </p>
+      <p class="pub-authors">
+        - Constructed a Korean–English parallel dataset for video-guided machine translation (VMT).
+      </p>
     </div>
+
     <div class="publication">
-      <p class="pub-title"><strong>Data Analyst Intern, UpennSolution</strong> — Feb. 2021 - Jul. 2021</p>
-      <p class="pub-authors">- Conducted quantitative analysis on real-world data to extract insights into social phenomena.</p>
+      <p class="pub-title">
+        <strong>Data Analyst Intern, UpennSolution</strong> — Feb. 2021 - Jul. 2021
+      </p>
+      <p class="pub-authors">
+        - Conducted quantitative analysis on real-world data to extract insights into social phenomena.
+      </p>
     </div>
   </section>
+
 
   <!-- Projects -->
   <section id="projects">
     <h2>Research Projects</h2>
+
     <div class="publication">
-      <p class="pub-title"><strong>Clinical Information Extraction </strong> — Oct. 2025 - Feb. 2026</p>
-      <p class="pub-authors">Research Collaboration with Seoul National University Bundang Hospital</p>
-      <p class="pub-conference">- Constructed an LLM-based pipeline that extracts and structures key clinical information from epilepsy patient notes, ensuring robustness to heterogeneous physician documentation styles.</p>
+      <p class="pub-title">
+        <strong>Clinical Information Extraction</strong> — Oct. 2025 - Feb. 2026
+      </p>
+      <p class="pub-authors">
+        Research Collaboration with Seoul National University Bundang Hospital
+      </p>
+      <p class="pub-conference">
+        - Constructed an LLM-based pipeline that extracts and structures key clinical information from epilepsy patient notes, ensuring robustness to heterogeneous physician documentation styles.
+      </p>
     </div>
+
     <div class="publication">
-      <p class="pub-title"><strong>Legal RAG System</strong> — Mar. 2025 - Aug. 2025</p>
-      <p class="pub-authors">Research Collaboration with Naedam C&amp;C</p>
-      <p class="pub-conference">- Constructed a legal retrieval corpus and an evaluation QA dataset for Korean fire safety law, and developed a domain-specific RAG system validated on this benchmark.</p>
+      <p class="pub-title">
+        <strong>Legal RAG System</strong> — Mar. 2025 - Aug. 2025
+      </p>
+      <p class="pub-authors">
+        Research Collaboration with Naedam C&amp;C
+      </p>
+      <p class="pub-conference">
+        - Constructed a legal retrieval corpus and an evaluation QA dataset for Korean fire safety law, and developed a domain-specific RAG system validated on this benchmark.
+      </p>
     </div>
+
     <div class="publication">
-      <p class="pub-title"><strong>Face Blur Estimation</strong> — Jul. 2022 - Sep. 2022</p>
-      <p class="pub-authors">Research Collaboration with Alchera</p>
-      <p class="pub-conference">- Developed and evaluated a regression model estimating blur levels in facial images to filter motion-blurred inputs for reliable face recognition.</p>
+      <p class="pub-title">
+        <strong>Face Blur Estimation</strong> — Jul. 2022 - Sep. 2022
+      </p>
+      <p class="pub-authors">
+        Research Collaboration with Alchera
+      </p>
+      <p class="pub-conference">
+        - Developed and evaluated a regression model estimating blur levels in facial images to filter motion-blurred inputs for reliable face recognition.
+      </p>
     </div>
   </section>
 
-  <!-- Awards -->
+
+  <!-- Patents -->
   <section id="patents">
     <h2>Patents</h2>
-    <p class="pub-title"><strong>Method and Apparatus for Adaptive Injection Decoding to Prevent Incomplete Reasoning in Large Language Models</strong></p>
-    <p class="pub-authors">Patent No. 10-2025-0165083, South Korea (Patent Pending)</p>
+
+    <p class="pub-title">
+      <strong>
+        Method and Apparatus for Adaptive Injection Decoding to Prevent Incomplete Reasoning in Large Language Models
+      </strong>
+    </p>
+
+    <p class="pub-authors">
+      Patent No. 10-2025-0165083, South Korea (Patent Pending)
+    </p>
   </section>
+
 
   <!-- Awards -->
   <section id="awards">
-    <h2>Awards & Honors</h2>
+    <h2>Awards &amp; Honors</h2>
+
     <p class="pub-type">Fellowships / Scholarships</p>
-    <p class="pub-title"><strong>Support for Next-Generation Researchers Program</strong></p>
-    <p class="pub-authors">Research Subsidy for Master’s Students, Ministry of Education, South Korea (Jul. 2024 - Jun. 2025)</p>
-    <!-- <p class="pub-conference"></p> -->
-    <p class="pub-title"><strong>Merit-based Scholarship</strong></p>
-    <p class="pub-authors">Awarded for academic excellence, Seoul National University (2024)</p>
-    <!-- <p class="pub-conference">2024</p> -->
-    <p class="pub-title"><strong>Jilli Scholarship (Merit-based Scholarship)</strong></p>
-    <p class="pub-authors">Awarded for academic excellence, Yonsei University (2018, 2020)</p>
-    <!-- <p class="pub-conference">2018, 2020</p> -->
+
+    <p class="pub-title">
+      <strong>Support for Next-Generation Researchers Program</strong>
+    </p>
+    <p class="pub-authors">
+      Research Subsidy for Master's Students, Ministry of Education, South Korea (Jul. 2024 - Jun. 2025)
+    </p>
+
+    <p class="pub-title">
+      <strong>Merit-based Scholarship</strong>
+    </p>
+    <p class="pub-authors">
+      Awarded for academic excellence, Seoul National University (2024)
+    </p>
+
+    <p class="pub-title">
+      <strong>Jilli Scholarship (Merit-based Scholarship)</strong>
+    </p>
+    <p class="pub-authors">
+      Awarded for academic excellence, Yonsei University (2018, 2020)
+    </p>
+
     <br>
+
     <p class="pub-type">Awards</p>
-    <p class="pub-title"><strong>Honors</strong></p>
-    <p class="pub-authors">Top 10% in the College of Social Science, Yonsei University (2018, 2020)</p>
-    <!-- <p class="pub-conference">2018, 2020</p> -->
+
+    <p class="pub-title">
+      <strong>Honors</strong>
+    </p>
+    <p class="pub-authors">
+      Top 10% in the College of Social Science, Yonsei University (2018, 2020)
+    </p>
   </section>
 
 </main>
 
+
 <script>
   window.addEventListener('scroll', function() {
     const heroHeight = document.querySelector('.hero').offsetHeight;
+
     if (window.scrollY > heroHeight / 4) {
       document.body.classList.add('scrolled');
     } else {
       document.body.classList.remove('scrolled');
     }
+  });
+
+
+  // Publications: Selected / All toggle
+  const publicationTabs = document.querySelectorAll('.publication-tab');
+  const publicationViews = document.querySelectorAll('.publication-view');
+
+  publicationTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const targetView = this.dataset.view;
+
+      publicationTabs.forEach(t => t.classList.remove('active'));
+      publicationViews.forEach(view => view.classList.remove('active'));
+
+      this.classList.add('active');
+      document.getElementById(targetView).classList.add('active');
+    });
   });
 </script>
 
