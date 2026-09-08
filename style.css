@@ -163,7 +163,7 @@ html { scroll-behavior: smooth; }
     min-height: auto;
     display: flex;
     justify-content: flex-start;
-    padding-top: 55px;
+    padding-top: 53px;
     padding-bottom: 40px;
   }
 
@@ -208,7 +208,7 @@ html { scroll-behavior: smooth; }
     right: 14px;
     bottom: 8px;
 
-    font-size: clamp(11px, 1.8vh, 13.5px);
+    font-size: clamp(10.8px, 1.7vh, 13.2px);
     gap: clamp(2px, 0.5vh, 3px);
   }
 
