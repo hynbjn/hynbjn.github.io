@@ -21,6 +21,7 @@ main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
   justify-content: center;
   text-align: center;
   padding: 8px 0;
+  position: relative;
 }
 
 .hero .photo img { width: 260px; height: 300px; object-fit: cover; border-radius: 0; }
@@ -60,23 +61,25 @@ section ul { padding-left: 20px; }
 
 /* Section buttons */
 .section-buttons {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: fixed;
-  bottom: 10px;
+  position: absolute;
   right: 20px;
+  bottom: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 6px;
 
-  gap: clamp(2px, 0.7vh, 6px);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: clamp(11px, 1.8vh, 15.2px);
+  font-size: 15.2px;
   line-height: 1.2;
   letter-spacing: 1px;
 
-  color: #fff;
   z-index: 90;
   transition: transform 0.3s ease, opacity 0.3s ease;
+
+  color: #fff;
 }
 
 .section-buttons a { color: #fff; text-decoration: none; }
@@ -197,11 +200,14 @@ html { scroll-behavior: smooth; }
   }
 
   .section-buttons {
-    font-size: clamp(10px, 1.6vh, 12px);
     line-height: 1.15;
     letter-spacing: 0.8px;
-    bottom: 8px;
+
+    position: fixed;
     right: 14px;
+    bottom: 8px;
+
+    font-size: clamp(10.5px, 1.7vh, 13px);
     gap: clamp(2px, 0.5vh, 3px);
   }
 
@@ -238,7 +244,7 @@ html { scroll-behavior: smooth; }
   }
 
   .pub-tags {
-    margin-left: 15px;
+    margin-left: 16px;
   }
 
   .work-title {
