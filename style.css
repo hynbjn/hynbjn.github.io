@@ -215,6 +215,12 @@ html { scroll-behavior: smooth; }
     margin-left: 15px;
   }
 
+  .publication-tabs {
+  display: flex;
+  gap: 4px;
+  margin: 0 0 24px 6px;
+  }
+
   .pub-type {
     font-size: 18px;
   }
