@@ -262,10 +262,14 @@ html { scroll-behavior: smooth; }
     top: 10px;
   }
 
+  /* 모바일 Section Buttons */
   .section-buttons {
-    font-size: 14px;
-    bottom: 10px;
-    gap: 4px;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.8px;
+    bottom: 8px;
+    right: 14px;
+    gap: 3px;
   }
 
   section h2 {
@@ -295,7 +299,7 @@ html { scroll-behavior: smooth; }
   }
 
   .pub-tags {
-    margin-left: 3px;
+    margin-left: 10px;
   }
 
   .work-title {
@@ -306,4 +310,3 @@ html { scroll-behavior: smooth; }
     font-size: 14px;
   }
 }
-
