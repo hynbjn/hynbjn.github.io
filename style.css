@@ -227,14 +227,13 @@ html { scroll-behavior: smooth; }
 
   .section-buttons {
     position: static;
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
     width: 100%;
+    margin: 0 0 40px;
     gap: 6px;
-    margin: 20px 0 40px;
 
     transform: none;
   }
@@ -242,7 +241,7 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 768px) {
   .pub-tags {
-    margin-left: 10px;
+    margin-left: 12px;
   }
 }
 
