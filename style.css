@@ -14,7 +14,7 @@ main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,6 +159,7 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 600px) {
   .hero {
+    height: auto;
     min-height: auto;
     display: flex;
     justify-content: flex-start;
@@ -207,7 +208,7 @@ html { scroll-behavior: smooth; }
     right: 14px;
     bottom: 8px;
 
-    font-size: clamp(10.5px, 1.7vh, 13px);
+    font-size: clamp(11px, 1.8vh, 13.5px);
     gap: clamp(2px, 0.5vh, 3px);
   }
 
